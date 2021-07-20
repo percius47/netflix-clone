@@ -1,6 +1,8 @@
 .profileScreen{
-    height: 100vh;
+    height: auto;
     color: white;
+
+  
 }
 
 .profileScreen_body{
@@ -51,7 +53,7 @@ flex: 1;
     border:none;
     cursor: pointer;
     font-weight: 600;
-
+    
 } 
 .profileScreen_plans{
     margin-top: 20px;
@@ -62,4 +64,7 @@ flex: 1;
    border-bottom: 1px solid #282c2d;
     
       
+}
+.profileScreen_bottom{
+   height: 30px;
 }
