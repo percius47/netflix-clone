@@ -27,6 +27,7 @@ function SignupScreen() {
 
     function signIn(e){
         e.preventDefault();
+        console.log(emailRef.current.value+" "+passwordRef.current.value);
         auth.signInWithEmailAndPassword(
         
             emailRef.current.value,

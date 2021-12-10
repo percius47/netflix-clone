@@ -17,12 +17,21 @@ function LoginScreen() {
 
             <button className="loginScreen_button"
             onClick={()=> setSignIn(true)}
-            >Sign In</button>
+            >Sign In</button> 
             <div className="loginScreen_gradient"/>
             </div>
             <div className="loginScreen_body">
+            
                 {signIn?
-                (<SignInScreen/>):
+
+                
+                (
+                <>
+                <SignInScreen/>
+                {console.log("inside"+signIn)}
+                </>
+                 
+                    ):
                 (
                     <>
                     <h1>Unlimited films, TV programmes and more.</h1>
@@ -30,6 +39,7 @@ function LoginScreen() {
                     <h3>
                         Ready to watch? Enter your email to create or resume your membership.
                     </h3>
+                    {console.log(signIn)}
                     <div className="loginScreen_input">
                         <form>
                             <input type="email" placeholder="Email address"/>
